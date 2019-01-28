@@ -13,7 +13,7 @@
         <a class="nav-link" href="#">Messages</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="logout()">Logout</a>
+        <a  *ngIf="loggedIn()" class="nav-link" (click)="logout()">Logout</a>
       </li>
     </ul>
 
